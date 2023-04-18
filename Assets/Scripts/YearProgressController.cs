@@ -27,7 +27,7 @@ public class YearProgressController : MonoBehaviour
     }
 
     void ProgressDate () {
-        DateTime dt = DateTime.Parse("2019-12-31").AddDays(TimeController.Instance.GetDay());
+        DateTime dt = DateTime.Parse("2019-12-23").AddDays(TimeController.Instance.GetDay());
         string dateString = dt.ToString("MMMM d", culture);
         progressDateText.text = dateString;
         
