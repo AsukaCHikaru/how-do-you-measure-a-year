@@ -7,10 +7,17 @@ public class DraggableActionItem : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     GameObject gameObjectForDrag;
     Vector3 worldPosition;
+    int layerIgnoreRaycast;
+
+    void Start () {
+        layerIgnoreRaycast = LayerMask.NameToLayer("Ignore Raycast");
+    }
 
     public void OnBeginDrag(PointerEventData eventData) {
-        GameObject thisGameObject = this.gameObject;
-        gameObjectForDrag = Instantiate(thisGameObject, transform.position, transform.rotation, transform.parent);
+        GameObject thisGameObject = gameObject;
+        Transform dragItemContainer = transform.parent.Find("DragItem");
+        gameObjectForDrag = Instantiate(thisGameObject, transform.position, transform.rotation, dragItemContainer);
+        gameObjectForDrag.layer = layerIgnoreRaycast;
     }
 
     public void OnDrag(PointerEventData eventData) {
