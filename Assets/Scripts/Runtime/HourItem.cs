@@ -6,9 +6,11 @@ using TMPro;
 
 public class HourItem : MonoBehaviour, IDropHandler {
     [SerializeField] private TextMeshProUGUI hourActionText;
+    private ActionItem actionItem;
 
     public void OnDrop(PointerEventData eventData) {
-        Debug.Log(eventData);
-        DraggableActionItem dragItem = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<DraggableActionItem>();
+        ActionItem dragItemAction = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<ActionItem>();
+        actionItem = dragItemAction;
+        hourActionText.text = actionItem.actionObject.name;
     }
 }
