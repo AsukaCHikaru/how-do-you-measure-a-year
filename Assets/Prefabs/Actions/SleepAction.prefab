@@ -149,7 +149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BREAKFAST
+  m_text: SLEEP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.6
-  m_fontSizeBase: 9.6
+  m_fontSize: 15.1
+  m_fontSizeBase: 15.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2571659939106266509}
   - component: {fileID: 8708435586356392101}
   m_Layer: 0
-  m_Name: BreakfastAction
+  m_Name: SleepAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.34021595, g: 0.5754717, b: 0.3835439, a: 1}
+  m_Color: {r: 0.120060466, g: 0.5377358, b: 0.29818043, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -370,4 +370,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e86c7220cd3ec7459361d021cf11721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionObject: {fileID: 11400000, guid: 631c88f590e7d914ab8c7498648753ad, type: 2}
+  actionObject: {fileID: 11400000, guid: c9d942033f434d940b647ace2d54e722, type: 2}
+  saveResource: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}

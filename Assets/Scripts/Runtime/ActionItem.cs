@@ -6,4 +6,10 @@ using UnityEngine;
 public class ActionItem : MonoBehaviour
 {
     [SerializeField] public ActionObject actionObject;
+    [SerializeField] private ResourceItem saveResource;
+
+    internal void Perform () {
+        Debug.Log($"{actionObject.name} {actionObject.saveResourceDifference}");
+        saveResource.Manipulate(actionObject.saveResourceDifference);
+    }
 }

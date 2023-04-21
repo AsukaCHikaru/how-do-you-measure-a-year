@@ -13,9 +13,16 @@ public class ResourceItem : MonoBehaviour {
         value = defaultValue;
     }
 
+    void LateUpdate () {
+        UpdateUI();
+    }
+
     internal void Consume() {
         value -= resourceObject.consumptionPerDay;
-        UpdateUI();
+    }
+
+    internal void Manipulate (int difference) {
+        value += difference;
     }
 
     void UpdateUI() {

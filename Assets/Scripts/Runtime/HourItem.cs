@@ -17,4 +17,8 @@ public class HourItem : MonoBehaviour, IDropHandler {
         actionItem = dragItemAction;
         hourActionText.text = actionItem.actionObject.name;
     }
+
+    internal void PerformAction () {
+        actionItem.Perform();
+    }
 }

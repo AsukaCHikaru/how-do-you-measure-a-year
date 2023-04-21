@@ -7,4 +7,6 @@ public class ActionObject : ScriptableObject
     [SerializeField, TextArea(1, 10)] internal string description;
     [SerializeField] internal int timeMinute;
     [SerializeField] internal Sprite icon;
+
+    [SerializeField] internal int saveResourceDifference;
 }

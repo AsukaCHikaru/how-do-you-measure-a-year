@@ -149,7 +149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LUNCH
+  m_text: PHONE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2571659939106266509}
   - component: {fileID: 8708435586356392101}
   m_Layer: 0
-  m_Name: LunchAction
+  m_Name: PhoneAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.34021595, g: 0.5754717, b: 0.3835439, a: 1}
+  m_Color: {r: 0.7264151, g: 0.584554, b: 0.038833458, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -370,4 +370,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e86c7220cd3ec7459361d021cf11721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionObject: {fileID: 11400000, guid: 1e1d29e252d5ac44ab5291b11b218cde, type: 2}
+  actionObject: {fileID: 11400000, guid: 64c1c9f334edc0140816ff43b9e3ad7a, type: 2}
+  saveResource: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}

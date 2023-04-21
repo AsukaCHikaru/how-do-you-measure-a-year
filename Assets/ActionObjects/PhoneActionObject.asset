@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Use phone.
   timeMinute: 60
   icon: {fileID: 0}
+  saveResourceDifference: -1

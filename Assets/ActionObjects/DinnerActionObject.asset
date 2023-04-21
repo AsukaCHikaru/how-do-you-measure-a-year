@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Eat dinner.
   timeMinute: 60
   icon: {fileID: 0}
+  saveResourceDifference: -2
