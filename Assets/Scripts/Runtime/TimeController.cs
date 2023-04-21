@@ -6,6 +6,7 @@ public class TimeController : MonoBehaviour
 {
     public static TimeController Instance;
     [SerializeField] private float dayToSecondRatio;
+    [SerializeField] private ResourceController resourceController;
 
     private int day;
     private float dateTimer;
@@ -24,6 +25,7 @@ public class TimeController : MonoBehaviour
         if (dateTimer >= dayToSecondRatio) {
             dateTimer -= dayToSecondRatio;
             day++;
+            resourceController.HandleResourceConsumption();
         }
     }
 
