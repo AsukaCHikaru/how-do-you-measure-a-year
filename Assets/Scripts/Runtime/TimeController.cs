@@ -11,7 +11,7 @@ public class TimeController : MonoBehaviour
 
     private int day;
     private float dateTimer;
-    private float hourToSecondRatio;
+    internal float hourToSecondRatio;
     private int hour;
     private int lastHour;
 
@@ -33,14 +33,17 @@ public class TimeController : MonoBehaviour
             hourController.PerformHourAction(hour);
         }
         if (dateTimer >= dayToSecondRatio) {
-            dateTimer -= dayToSecondRatio;
-            day++;
+            day = (int)Mathf.Floor(dateTimer / dayToSecondRatio);
             resourceController.HandleResourceConsumption();
         }
     }
 
     public int GetDay () {
         return day;
+    }
+
+    public float GetTimer () {
+        return dateTimer;
     }
 
 }
