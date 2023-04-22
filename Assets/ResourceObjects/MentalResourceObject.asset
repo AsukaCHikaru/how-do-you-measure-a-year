@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5660e8f0011813f46b1840f7e8afc4cd, type: 3}
-  m_Name: DinnerActionObject
+  m_Script: {fileID: 11500000, guid: d9a081ebe779a9d43af9451c1bc9ff4f, type: 3}
+  m_Name: MentalResourceObject
   m_EditorClassIdentifier: 
-  name: Dinner
-  description: Eat dinner.
-  timeMinute: 60
-  icon: {fileID: 0}
-  saveResourceDifference: -2
-  healthResourceDifference: 0.5
-  mentalResourceDifference: 0.4
+  consumptionPerDay: 0

@@ -18,3 +18,4 @@ MonoBehaviour:
   icon: {fileID: 0}
   saveResourceDifference: 0.5
   healthResourceDifference: -0.3
+  mentalResourceDifference: -0.2
