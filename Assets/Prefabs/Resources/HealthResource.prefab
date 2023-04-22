@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7719864420791429913}
   - component: {fileID: 7719864420791429912}
   m_Layer: 0
-  m_Name: SaveResource
+  m_Name: HealthResource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e320bc1c051f149994a572cfda2eae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceObject: {fileID: 11400000, guid: e473a397a1548d943aee7cdf495c68ce, type: 2}
+  resourceObject: {fileID: 11400000, guid: 83b96fea286780a4b8e4772323dbfb26, type: 2}
   value: 0
-  defaultValue: 30
+  defaultValue: 50
   maxValue: 100
   valueText: {fileID: 7719864420848955503}
 --- !u!1 &7719864420848955501
@@ -125,8 +125,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284011520
+  m_fontColor: {r: 0, g: 0.8301887, b: 0.34460667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save
+  m_text: Health
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284011520
+  m_fontColor: {r: 0, g: 0.8301887, b: 0.34460667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

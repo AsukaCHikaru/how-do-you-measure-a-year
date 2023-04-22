@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a081ebe779a9d43af9451c1bc9ff4f, type: 3}
   m_Name: SaveResourceObject
   m_EditorClassIdentifier: 
-  consumptionPerDay: 2
+  consumptionPerDay: 5.5

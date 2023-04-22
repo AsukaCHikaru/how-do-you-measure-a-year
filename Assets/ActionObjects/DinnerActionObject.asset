@@ -17,3 +17,4 @@ MonoBehaviour:
   timeMinute: 60
   icon: {fileID: 0}
   saveResourceDifference: -2
+  healthResourceDifference: 0.5

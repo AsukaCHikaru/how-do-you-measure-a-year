@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Resource")]
 public class ResourceObject : ScriptableObject
 {
-    [SerializeField] internal int consumptionPerDay;
+    [SerializeField] internal float consumptionPerDay;
 }

@@ -8,5 +8,6 @@ public class ActionObject : ScriptableObject
     [SerializeField] internal int timeMinute;
     [SerializeField] internal Sprite icon;
 
-    [SerializeField] internal int saveResourceDifference;
+    [SerializeField] internal float saveResourceDifference;
+    [SerializeField] internal float healthResourceDifference;
 }

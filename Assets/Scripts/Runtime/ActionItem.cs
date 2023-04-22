@@ -7,9 +7,10 @@ public class ActionItem : MonoBehaviour
 {
     [SerializeField] public ActionObject actionObject;
     [SerializeField] private ResourceItem saveResource;
+    [SerializeField] private ResourceItem healthResource;
 
     internal void Perform () {
-        Debug.Log($"{actionObject.name} {actionObject.saveResourceDifference}");
         saveResource.Manipulate(actionObject.saveResourceDifference);
+        healthResource.Manipulate(actionObject.healthResourceDifference);
     }
 }

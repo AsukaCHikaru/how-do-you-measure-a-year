@@ -16,4 +16,5 @@ MonoBehaviour:
   description: Work to make money.
   timeMinute: 60
   icon: {fileID: 0}
-  saveResourceDifference: 1
+  saveResourceDifference: 0.5
+  healthResourceDifference: -0.3

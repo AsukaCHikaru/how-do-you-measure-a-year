@@ -372,3 +372,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionObject: {fileID: 11400000, guid: 64c1c9f334edc0140816ff43b9e3ad7a, type: 2}
   saveResource: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+  healthResource: {fileID: 7719864420791429912, guid: 7d057e1e03bc2b84390cedaf3695edb6, type: 3}

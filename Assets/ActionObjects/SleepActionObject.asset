@@ -16,3 +16,5 @@ MonoBehaviour:
   description: Sleep
   timeMinute: 60
   icon: {fileID: 0}
+  saveResourceDifference: 0
+  healthResourceDifference: 0.2

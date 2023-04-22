@@ -5,8 +5,9 @@ using TMPro;
 
 public class ResourceItem : MonoBehaviour {
     [SerializeField] internal ResourceObject resourceObject;
-    [SerializeField] internal int value;
-    [SerializeField] internal int defaultValue;
+    [SerializeField] internal float value;
+    [SerializeField] internal float defaultValue;
+    [SerializeField] internal float maxValue;
     [SerializeField] private TextMeshProUGUI valueText;
 
     void Start() {
@@ -19,13 +20,22 @@ public class ResourceItem : MonoBehaviour {
 
     internal void Consume() {
         value -= resourceObject.consumptionPerDay;
+        if (value <= 0) {
+            value = 0;
+        }
     }
 
-    internal void Manipulate (int difference) {
+    internal void Manipulate (float difference) {
         value += difference;
+        if (value < 0) {
+            value = 0;
+        }
+        if (value > maxValue) {
+            value = maxValue;
+        }
     }
 
     void UpdateUI() {
-        valueText.text = value.ToString();
+        valueText.text = Mathf.Floor(value).ToString();
     }
 }
