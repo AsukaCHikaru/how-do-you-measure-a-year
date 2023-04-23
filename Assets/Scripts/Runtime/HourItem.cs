@@ -22,10 +22,6 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         SetActionItem(dragItemAction);
     }
 
-    internal void PerformAction () {
-        actionItem.Perform();
-    }
-
     public void OnPointerEnter(PointerEventData eventData) {
         hourActionText.color = Color.red;
     }

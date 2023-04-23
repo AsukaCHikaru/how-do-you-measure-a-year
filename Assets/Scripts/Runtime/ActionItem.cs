@@ -17,9 +17,9 @@ public class ActionItem : MonoBehaviour
         sprite.color = actionObject.backgroundColor;
     }
 
-    internal void Perform () {
-        ResourceController.Instance.saveResource.Manipulate(actionObject.saveResourceDifference);
-        ResourceController.Instance.healthResource.Manipulate(actionObject.healthResourceDifference);
-        ResourceController.Instance.mentalResource.Manipulate(actionObject.mentalResourceDifference);
+    internal void Perform (int performTime) {
+        ResourceController.Instance.saveResource.Manipulate(actionObject.saveResourceDifferenceList[performTime]);
+        ResourceController.Instance.healthResource.Manipulate(actionObject.healthResourceDifferenceList[performTime]);
+        ResourceController.Instance.mentalResource.Manipulate(actionObject.mentalResourceDifferenceList[performTime]);
     }
 }

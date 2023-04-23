@@ -21,30 +21,30 @@ MonoBehaviour:
   healthResourceDifference: -0.3
   mentalResourceDifference: -0.2
   saveResourceDifferenceList:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
   healthResourceDifferenceList:
   - -0.3
   - -0.3

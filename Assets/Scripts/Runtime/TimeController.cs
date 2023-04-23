@@ -36,6 +36,7 @@ public class TimeController : MonoBehaviour
         if (dateTimer >= dayToSecondRatio) {
             dateTimer -= dayToSecondRatio;
             day++;
+            hourController.ResetActionTimeMap();
             resourceController.HandleResourceConsumption();
         }
     }

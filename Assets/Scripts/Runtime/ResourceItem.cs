@@ -26,6 +26,7 @@ public class ResourceItem : MonoBehaviour {
     }
 
     internal void Manipulate (float difference) {
+        // Debug.Log($"{resourceObject.name} {difference}");
         value += difference;
         if (value < 0) {
             value = 0;
