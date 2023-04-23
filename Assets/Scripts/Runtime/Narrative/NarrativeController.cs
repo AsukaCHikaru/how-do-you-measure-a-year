@@ -10,13 +10,10 @@ public class NarrativeController : MonoBehaviour
     [SerializeField] private ActionItem lunchAction;
     [SerializeField] private ActionItem dinnerAction;
     [SerializeField] private ActionItem socialmediaAction;
+    [SerializeField] private GameObject tokenPrefab;
 
     private bool isDefaultSet = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
     
     private void SetupDefaultActions () {
         HourController.Instance.hourItemList[0].SetActionItem(sleepAction);
@@ -45,11 +42,31 @@ public class NarrativeController : MonoBehaviour
         HourController.Instance.hourItemList[23].SetActionItem(socialmediaAction);
     }
 
+    void InstanteToken (ResourceItem resourceItem) {
+        foreach (ResourceTokenPair pair in resourceItem.resourceToTokenMap) {
+            int tokenNumber = (int)Mathf.Floor(resourceItem.value / pair.cost);
+            for (int i = 0; i < tokenNumber; i++) {
+                GameObject token = Instantiate(tokenPrefab, Vector3.zero, Quaternion.identity);
+                token.transform.SetParent(GameObject.Find("Tokens").transform);
+                token.transform.name = pair.tokenObject.name + (i + 1);
+                token.GetComponent<TokenItem>().SetToken(pair.tokenObject);
+            }
+        }
+    }
+
+    void SetupDefaultTokens () {
+        ResourceItem saveResource = ResourceController.Instance.saveResource;
+        InstanteToken(ResourceController.Instance.saveResource);
+        InstanteToken(ResourceController.Instance.healthResource);
+        InstanteToken(ResourceController.Instance.mentalResource);
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (!isDefaultSet) {
             SetupDefaultActions();
+            SetupDefaultTokens();
             isDefaultSet = true;
         }
     }

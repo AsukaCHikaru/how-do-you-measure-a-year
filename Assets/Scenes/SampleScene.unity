@@ -453,6 +453,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206f2e241dc01ae4388bc1bb6b3af3ce, type: 3}
+--- !u!1 &42248540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42248541}
+  m_Layer: 0
+  m_Name: Tokens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &42248541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42248540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.44, y: 1.53, z: -0.097910546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &145286827 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2609095934595125878, guid: 206f2e241dc01ae4388bc1bb6b3af3ce, type: 3}
@@ -828,6 +859,7 @@ MonoBehaviour:
   lunchAction: {fileID: 1044905614}
   dinnerAction: {fileID: 1234478290}
   socialmediaAction: {fileID: 829394078}
+  tokenPrefab: {fileID: 2571659939106266515, guid: 624ef33fd9cb0e24f897321a1a8272f6, type: 3}
 --- !u!224 &502268463 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2609095934595125878, guid: 206f2e241dc01ae4388bc1bb6b3af3ce, type: 3}
@@ -6456,6 +6488,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1300619531}
     m_Modifications:
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: resourceToTokenMap.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: resourceToTokenMap.Array.data[0].cost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: resourceToTokenMap.Array.data[1].cost
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: resourceToTokenMap.Array.data[0].tokenObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 286f5b1a1b2f2094489f0cd800cd2be3, type: 2}
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: resourceToTokenMap.Array.data[1].tokenObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 945c59c742af09e4882a36313cbca9a3, type: 2}
     - target: {fileID: 7719864420791429913, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
       propertyPath: m_RootOrder
       value: 2

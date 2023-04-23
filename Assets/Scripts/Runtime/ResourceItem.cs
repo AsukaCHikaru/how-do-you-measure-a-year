@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[System.Serializable]
+public struct ResourceTokenPair {
+    public TokenObject tokenObject;
+    public int cost;
+}
+
 public class ResourceItem : MonoBehaviour {
     [SerializeField] internal ResourceObject resourceObject;
     [SerializeField] internal float value;
     [SerializeField] internal float defaultValue;
     [SerializeField] internal float maxValue;
     [SerializeField] private TextMeshProUGUI valueText;
+    [SerializeField] internal List<ResourceTokenPair> resourceToTokenMap;
 
     void Start() {
         value = defaultValue;
@@ -20,9 +27,6 @@ public class ResourceItem : MonoBehaviour {
 
     internal void Consume() {
         value -= resourceObject.consumptionPerDay;
-        if (value <= 0) {
-            value = 0;
-        }
     }
 
     internal void Manipulate (float difference) {

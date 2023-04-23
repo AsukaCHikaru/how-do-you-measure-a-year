@@ -8,8 +8,8 @@ public class ResourceController : MonoBehaviour
 
     [SerializeField] private List<ResourceItem> resourceItemList;
     [SerializeField] internal ResourceItem saveResource;
-    [SerializeField] public ResourceItem healthResource;
-    [SerializeField] public ResourceItem mentalResource;
+    [SerializeField] internal ResourceItem healthResource;
+    [SerializeField] internal ResourceItem mentalResource;
 
     void Start () {
         Instance = this;
