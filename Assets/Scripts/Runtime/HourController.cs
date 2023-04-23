@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class HourController : MonoBehaviour
 {
-    [SerializeField] private List<HourItem> hourItemList;
+    public static HourController Instance;
+
+    [SerializeField] internal List<HourItem> hourItemList;
+
+    void Start () {
+        Instance = this;
+    }
 
     internal void PerformHourAction (int hour) {
         HourItem hourItem = hourItemList[hour];
-        if (hourItem != null) {
-            hourItemList[hour].PerformAction();
-        }
     }
+
 }

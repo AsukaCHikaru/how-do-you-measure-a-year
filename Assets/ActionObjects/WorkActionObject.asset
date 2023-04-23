@@ -16,6 +16,82 @@ MonoBehaviour:
   description: Work to make money.
   timeMinute: 60
   icon: {fileID: 0}
-  saveResourceDifference: 0.5
+  backgroundColor: {r: 0.4056604, g: 0.017859224, b: 0.253231, a: 1}
+  saveResourceDifference: 1
   healthResourceDifference: -0.3
   mentalResourceDifference: -0.2
+  saveResourceDifferenceList:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  healthResourceDifferenceList:
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.8
+  - -0.8
+  - -0.8
+  - -0.8
+  - -1
+  - -1
+  - -1
+  - -1.2
+  - -1.2
+  mentalResourceDifferenceList:
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.3
+  - -0.4
+  - -0.4
+  - -0.5
+  - -0.5
+  - -0.6
+  - -0.6
+  - -0.8
+  - -0.8
+  - -1
+  - -1
+  - -1.2
+  - -1.2
+  - -1.5
+  - -1.5
+  - -1.5

@@ -16,6 +16,82 @@ MonoBehaviour:
   description: Eat breakfast.
   timeMinute: 60
   icon: {fileID: 0}
+  backgroundColor: {r: 0.34117648, g: 0.5764706, b: 0.38431376, a: 1}
   saveResourceDifference: -1
   healthResourceDifference: 0.5
   mentalResourceDifference: 0.2
+  saveResourceDifferenceList:
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  healthResourceDifferenceList:
+  - 0.5
+  - 0
+  - -0.1
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  mentalResourceDifferenceList:
+  - 0.5
+  - 0.2
+  - 0.1
+  - 0
+  - -0.2
+  - -0.3
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5

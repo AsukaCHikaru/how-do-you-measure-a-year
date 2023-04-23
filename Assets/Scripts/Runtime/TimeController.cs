@@ -29,11 +29,13 @@ public class TimeController : MonoBehaviour
         dateTimer += Time.deltaTime;
         hour = Mathf.FloorToInt(dateTimer / hourToSecondRatio) % 24;
         if (lastHour != hour) {
+            // Debug.Log(hour);
             lastHour = hour;
             hourController.PerformHourAction(hour);
         }
         if (dateTimer >= dayToSecondRatio) {
-            day = (int)Mathf.Floor(dateTimer / dayToSecondRatio);
+            dateTimer -= dayToSecondRatio;
+            day++;
             resourceController.HandleResourceConsumption();
         }
     }

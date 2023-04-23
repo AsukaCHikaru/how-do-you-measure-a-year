@@ -16,6 +16,82 @@ MonoBehaviour:
   description: Eat dinner.
   timeMinute: 60
   icon: {fileID: 0}
+  backgroundColor: {r: 0.34117648, g: 0.5764706, b: 0.38431376, a: 1}
   saveResourceDifference: -2
   healthResourceDifference: 0.5
   mentalResourceDifference: 0.4
+  saveResourceDifferenceList:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  healthResourceDifferenceList:
+  - 0.5
+  - 0.2
+  - 0
+  - -0.2
+  - -0.4
+  - -0.6
+  - -0.8
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  mentalResourceDifferenceList:
+  - 0.5
+  - 0.2
+  - 0.1
+  - 0
+  - -0.2
+  - -0.3
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5

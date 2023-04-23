@@ -16,6 +16,82 @@ MonoBehaviour:
   description: Sleep
   timeMinute: 60
   icon: {fileID: 0}
+  backgroundColor: {r: 0.2782425, g: 0.7830189, b: 0.37078488, a: 1}
   saveResourceDifference: 0
   healthResourceDifference: 0.2
   mentalResourceDifference: 0.2
+  saveResourceDifferenceList:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  healthResourceDifferenceList:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.1
+  - 0.1
+  - 0.1
+  - 0
+  - 0
+  - -0.1
+  - -0.1
+  - -0.1
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  mentalResourceDifferenceList:
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.1
+  - 0.1
+  - 0.1
+  - 0
+  - 0
+  - -0.1
+  - -0.1
+  - -0.1
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
