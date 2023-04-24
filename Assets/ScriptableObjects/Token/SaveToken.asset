@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Save
   description: Your hard earned money. Meal, rent, everything depends on it.
   icon: {fileID: 0}
-  backgroundColor: {r: 0.9056604, g: 0.6584676, b: 0, a: 0}
+  backgroundColor: {r: 0.9056604, g: 0.6584676, b: 0, a: 1}

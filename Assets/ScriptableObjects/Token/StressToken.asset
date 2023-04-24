@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03076aacacea9d44581cc0f68e208085, type: 3}
   m_Name: StressToken
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Stress
+  description: You are stressed.
   icon: {fileID: 0}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  backgroundColor: {r: 0.040850785, g: 0.3063172, b: 0.764151, a: 1}

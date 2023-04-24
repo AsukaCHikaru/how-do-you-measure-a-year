@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Debt
   description: Earn money to erase them.
   icon: {fileID: 0}
-  backgroundColor: {r: 0.9056604, g: 0.6584676, b: 0, a: 0}
+  backgroundColor: {r: 0.9056604, g: 0.6584676, b: 0, a: 1}

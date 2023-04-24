@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using TMPro;
 
 [System.Serializable]
@@ -17,8 +18,11 @@ public class ResourceItem : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI valueText;
     [SerializeField] internal List<ResourceTokenPair> resourceToTokenMap;
 
+    private Transform tokenParent;
+
     void Start() {
         value = defaultValue;
+        tokenParent = GameObject.Find("Tokens").transform;
     }
 
     void LateUpdate () {
@@ -26,18 +30,56 @@ public class ResourceItem : MonoBehaviour {
     }
 
     internal void Consume() {
-        value -= resourceObject.consumptionPerDay;
+        Manipulate(resourceObject.consumptionPerDay * -1);
     }
 
     internal void Manipulate (float difference) {
         // Debug.Log($"{resourceObject.name} {difference}");
         value += difference;
-        if (value < 0) {
-            value = 0;
-        }
         if (value > maxValue) {
             value = maxValue;
         }
+        CheckTokenGeneration();
+    }
+
+    void CheckTokenGeneration () {
+        Dictionary<string, int> tokenNumberMap = new Dictionary<string, int>();
+        GameObject tokenPrefab = PrefabUtility.LoadPrefabContents("Assets/Prefabs/Tokens/TokenPrefab.prefab");
+
+        foreach (TokenItem tokenItem in tokenParent.GetComponentsInChildren<TokenItem>()) {
+            int thisTokenCount = 0;
+            tokenNumberMap.TryGetValue(tokenItem.tokenObject.name, out thisTokenCount);
+            tokenNumberMap[tokenItem.tokenObject.name] = thisTokenCount + 1;
+        }
+
+        foreach(ResourceTokenPair pair in resourceToTokenMap) {
+            int expectedTokenCount = (int)Mathf.Floor(value / pair.cost);
+            if (expectedTokenCount < 0) expectedTokenCount = 0;
+            int currentTokenCount = 0;
+            tokenNumberMap.TryGetValue(pair.tokenObject.name, out currentTokenCount);
+            
+            if (expectedTokenCount > currentTokenCount) {
+                for(int count = 0; count < expectedTokenCount - currentTokenCount; count++) {
+                    GameObject newToken = Instantiate(tokenPrefab, Vector3.zero, Quaternion.identity);
+                    newToken.transform.SetParent(tokenParent);
+                    newToken.transform.name = pair.tokenObject.name;
+                    newToken.GetComponent<TokenItem>().SetToken(pair.tokenObject);
+                }
+            }
+
+            if (expectedTokenCount < currentTokenCount) {
+                int countDiff = currentTokenCount - expectedTokenCount;
+                int deleteCount = 0;
+                foreach (TokenItem tokenItem in tokenParent.GetComponentsInChildren<TokenItem>()) {
+                    if (tokenItem.tokenObject.name == pair.tokenObject.name && deleteCount < countDiff) {
+                        Destroy(tokenItem.gameObject);
+                        deleteCount++;
+                    }
+                }
+            }
+        }
+
+        PrefabUtility.UnloadPrefabContents(tokenPrefab);
     }
 
     void UpdateUI() {
