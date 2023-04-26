@@ -33,6 +33,8 @@ public class ActionItem : MonoBehaviour
                     hour.SetActionItem(GameObject.Find("IdleAction").GetComponent<ActionItem>());
                 }
             }
+            GameObject oldWork = GameObject.Find("WorkAction");
+            Destroy(oldWork);
         }
     }
 

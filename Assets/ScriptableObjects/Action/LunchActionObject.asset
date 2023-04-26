@@ -17,9 +17,7 @@ MonoBehaviour:
   timeMinute: 60
   icon: {fileID: 0}
   backgroundColor: {r: 0.34117648, g: 0.5764706, b: 0.38431376, a: 1}
-  saveResourceDifference: -1
-  healthResourceDifference: 0.5
-  mentalResourceDifference: 0.1
+  id: 6
   saveResourceDifferenceList:
   - 1
   - 1
@@ -95,3 +93,28 @@ MonoBehaviour:
   - -0.5
   - -0.5
   - -0.5
+  knowledgeResourceDifferenceList:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: WorkActionObject
   m_EditorClassIdentifier: 
   name: Work
-  description: Work to make money.
+  description: Your day job. Long hours, mediocre pay, mentally draining.
   timeMinute: 60
   icon: {fileID: 0}
   backgroundColor: {r: 0.7924528, g: 0, b: 0.48517534, a: 1}
+  id: 11
   saveResourceDifferenceList:
   - 0.6
   - 0.6
@@ -92,3 +93,28 @@ MonoBehaviour:
   - -2
   - -2
   - -2
+  knowledgeResourceDifferenceList:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0

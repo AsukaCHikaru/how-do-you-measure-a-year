@@ -10,89 +10,89 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5660e8f0011813f46b1840f7e8afc4cd, type: 3}
-  m_Name: ExerciseActionObject
+  m_Name: WorkActionObject_2
   m_EditorClassIdentifier: 
-  name: Exercise
-  description: Hit the gym, pump some irons.
-  timeMinute: 0
+  name: Work
+  description: Work to make money.
+  timeMinute: 60
   icon: {fileID: 0}
-  backgroundColor: {r: 0.03198047, g: 0.7264151, b: 0.521406, a: 1}
-  id: 3
+  backgroundColor: {r: 0.7924528, g: 0, b: 0.48517534, a: 1}
+  id: 12
   saveResourceDifferenceList:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.6
   healthResourceDifferenceList:
-  - 1
-  - 0.8
-  - 0.4
-  - 0.1
-  - 0
-  - -0.1
   - -0.3
-  - -0.6
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.4
+  - -0.4
+  - -0.4
+  - -0.4
+  - -0.4
+  - -0.4
+  - -0.4
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.5
+  - -0.8
+  - -0.8
+  - -0.8
   - -0.8
   - -1
   - -1
   - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
+  - -1.2
+  - -1.2
   mentalResourceDifferenceList:
-  - 1
-  - 0.8
-  - 0.4
-  - 0.1
-  - 0
-  - -0.1
   - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.3
+  - -0.4
+  - -0.5
   - -0.6
+  - -0.6
+  - -0.8
   - -0.8
   - -1
   - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
-  - -1
+  - -1.2
+  - -1.2
+  - -1.5
+  - -1.5
+  - -2
+  - -2
+  - -2
   knowledgeResourceDifferenceList:
   - 0
   - 0
