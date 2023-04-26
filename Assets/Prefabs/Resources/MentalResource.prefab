@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7719864420791429913}
   - component: {fileID: 7719864420791429912}
+  - component: {fileID: 3827227646309819470}
   m_Layer: 0
   m_Name: MentalResource
   m_TagString: Untagged
@@ -47,9 +48,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceObject: {fileID: 11400000, guid: 4d000a62d23c7f84eb1b65ed8eb3fa1c, type: 2}
   value: 0
-  defaultValue: 50
+  defaultValue: -5
   maxValue: 100
   valueText: {fileID: 7719864420848955503}
+  resourceToTokenMap:
+  - tokenObject: {fileID: 11400000, guid: b68d14ba6a6dbe14dbdbef80244eb2a9, type: 2}
+    cost: -5
+--- !u!225 &3827227646309819470
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719864420791429926}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7719864420848955501
 GameObject:
   m_ObjectHideFlags: 0

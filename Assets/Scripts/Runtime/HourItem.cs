@@ -18,8 +18,9 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     }
 
     public void OnDrop(PointerEventData eventData) {
-        ActionItem dragItemAction = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<ActionItem>();
-        SetActionItem(dragItemAction);
+        string dropActionName = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<ActionItem>().actionObject.name;
+        ActionItem originAction = GameObject.Find("ActionContainer").transform.Find(dropActionName + "Action").GetComponent<ActionItem>();
+        SetActionItem(originAction);
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
