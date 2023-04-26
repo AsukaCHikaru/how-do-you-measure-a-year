@@ -10,12 +10,14 @@ public class ActionItem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private SpriteRenderer sprite;
+    public int allTimePerformTime = 0;
 
     void Start () {
         SetupUI();
     }
 
     internal void Perform (int performTime) {
+        allTimePerformTime += 1;
         ResourceController.Instance.saveResource.Manipulate(actionObject.saveResourceDifferenceList[performTime]);
         ResourceController.Instance.healthResource.Manipulate(actionObject.healthResourceDifferenceList[performTime]);
         ResourceController.Instance.mentalResource.Manipulate(actionObject.mentalResourceDifferenceList[performTime]);

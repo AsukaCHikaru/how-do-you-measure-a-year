@@ -8,6 +8,7 @@ public class TimeController : MonoBehaviour
     [SerializeField] private float dayToSecondRatio;
     [SerializeField] private ResourceController resourceController;
     [SerializeField] private HourController hourController;
+    [SerializeField] private GameObject goodEndScreen;
 
     private int day;
     private float dateTimer;
@@ -38,6 +39,10 @@ public class TimeController : MonoBehaviour
             day++;
             hourController.ResetActionTimeMap();
             resourceController.HandleResourceConsumption();
+
+            if (day >= 40 && goodEndScreen.activeInHierarchy == false) {
+                EndingController.Instance.StartGoodEnding();
+            }
         }
     }
 
