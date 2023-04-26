@@ -7,6 +7,7 @@ public class HourController : MonoBehaviour {
 
     [SerializeField] internal List<HourItem> hourItemList;
     private Dictionary<string, int> actionTimeMap = new Dictionary<string, int>() { };
+    private int changeJobTimes = 0;
 
     void Start() {
         Instance = this;
@@ -27,7 +28,7 @@ public class HourController : MonoBehaviour {
     internal void ResetActionTimeMap() {
         actionTimeMap.Clear();
     }
-    internal void ChangeJob(int jobId) { 
+    internal void ChangeJob(int jobId) {
         ActionItem originAction;
         if (jobId == 11) {
             originAction = WorkActionController.Instance.workActionGameObject.GetComponent<ActionItem>();

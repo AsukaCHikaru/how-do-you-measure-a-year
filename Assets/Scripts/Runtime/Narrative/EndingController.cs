@@ -31,18 +31,22 @@ public class EndingController : MonoBehaviour
         int mentalValue = (int)(ResourceController.Instance.mentalResource.value);
         int healthValue = (int)(ResourceController.Instance.healthResource.value);
         int lowestValue = Mathf.Min(saveValue, Mathf.Min(mentalValue, healthValue));
+        
         if (lowestValue < endingThreshold) {
             endingTimer += Time.deltaTime;
             if (endingTimer > endingCountdownInterval) {
+        
                 endingTimer -= endingCountdownInterval;
                 endingCountdown += 0.05f;
                 fadeoutImageCanvas.alpha = endingCountdown;
-            } else {
-                endingCountdown -= 0.05f;
-                if (endingCountdown < 0) {
-                    endingCountdown = 0;
-                }
             }
+        } else {
+        
+            endingCountdown -= 0.05f;
+            if (endingCountdown < 0) {
+                endingCountdown = 0;
+            }
+            fadeoutImageCanvas.alpha = endingCountdown;
         }
 
         if (isGoodEnding) {

@@ -23,10 +23,9 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnDrop(PointerEventData eventData) {
         string dropActionName = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<ActionItem>().actionObject.name;
-        if (dropActionName != "Work") {
-            ActionItem originAction = GameObject.Find("ActionContainer").transform.Find(dropActionName + "Action").GetComponent<ActionItem>();
-            SetActionItem(originAction);
-        } else {
+        ActionItem originAction = GameObject.Find("ActionContainer").transform.Find(dropActionName + "Action").GetComponent<ActionItem>();
+        SetActionItem(originAction);
+        if (dropActionName == "Work") {
             int dropActionId = GameObject.Find("DragItem").transform.GetChild(0).gameObject.GetComponent<ActionItem>().actionObject.id;
             HourController.Instance.ChangeJob(dropActionId);
         }
