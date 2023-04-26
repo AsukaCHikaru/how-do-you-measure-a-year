@@ -10,6 +10,7 @@ public class ResourceController : MonoBehaviour
     [SerializeField] internal ResourceItem saveResource;
     [SerializeField] internal ResourceItem healthResource;
     [SerializeField] internal ResourceItem mentalResource;
+    [SerializeField] internal ResourceItem knowledgeResource;
 
     void Start () {
         Instance = this;

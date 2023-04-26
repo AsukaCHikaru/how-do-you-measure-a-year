@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5660e8f0011813f46b1840f7e8afc4cd, type: 3}
-  m_Name: QuitActionObject
+  m_Name: ExerciseActionObject
   m_EditorClassIdentifier: 
-  name: Quit
-  description: I'm done with this job.
-  timeMinute: 60
+  name: Exercise
+  description: Hit the gym, pump some irons.
+  timeMinute: 0
   icon: {fileID: 0}
-  backgroundColor: {r: 0.35059872, g: 0.013498193, b: 0.8584906, a: 1}
+  backgroundColor: {r: 0.03198047, g: 0.7264151, b: 0.521406, a: 1}
   saveResourceDifferenceList:
   - 0
   - 0
@@ -43,52 +43,52 @@ MonoBehaviour:
   - 0
   - 0
   healthResourceDifferenceList:
+  - 1
+  - 0.8
+  - 0.4
+  - 0.1
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - -0.1
+  - -0.3
+  - -0.6
+  - -0.8
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
   mentalResourceDifferenceList:
-  - 2
+  - 1
+  - 0.8
+  - 0.4
+  - 0.1
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - -0.1
+  - -0.3
+  - -0.6
+  - -0.8
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1
+  - -1

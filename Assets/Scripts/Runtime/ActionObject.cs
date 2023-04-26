@@ -12,4 +12,5 @@ public class ActionObject : ScriptableObject
     [SerializeField] internal float[] saveResourceDifferenceList = new float[24];
     [SerializeField] internal float[] healthResourceDifferenceList = new float[24];
     [SerializeField] internal float[] mentalResourceDifferenceList = new float[24];
+    [SerializeField] internal float[] knowledgeResourceDifferenceList = new float[24];
 }

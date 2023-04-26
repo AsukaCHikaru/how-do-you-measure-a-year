@@ -47,9 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceObject: {fileID: 11400000, guid: e473a397a1548d943aee7cdf495c68ce, type: 2}
   value: 0
-  defaultValue: 30
+  defaultValue: 20
   maxValue: 10000
   valueText: {fileID: 7719864420848955503}
+  resourceToTokenMap: []
+  tokenPrefab: {fileID: 0}
+  spawnLocationGameObject: {fileID: 0}
 --- !u!1 &7719864420848955501
 GameObject:
   m_ObjectHideFlags: 0

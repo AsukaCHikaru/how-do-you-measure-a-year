@@ -63,17 +63,35 @@ public class NarrativeController : MonoBehaviour
     }
 
     [SerializeField] private int jobHuntSpawnMentalThreshold;
-    [SerializeField] private ActionObject jobHuntActionObject;
-    [SerializeField] private ActionObject quitObject;
-    private bool isJobHuntSpawned = false;
+    [SerializeField] private ActionItem jobHuntActionItem;
+    [SerializeField] private ActionItem quitActionItem;
 
     void CheckJobHuntSpawn () {
-        if (ResourceController.Instance.mentalResource.value > jobHuntSpawnMentalThreshold || isJobHuntSpawned) {
+        if (ResourceController.Instance.mentalResource.value > jobHuntSpawnMentalThreshold || jobHuntActionItem.gameObject.activeInHierarchy) {
             return;
         }
-        SpawnNewAction(jobHuntActionObject);
-        SpawnNewAction(quitObject);
-        isJobHuntSpawned = true;
+        jobHuntActionItem.gameObject.SetActive(true);
+        quitActionItem.gameObject.SetActive(true);
+    }
+
+    [SerializeField] private int exerciseHealthThreshold;
+    [SerializeField] private ActionItem exerciseActionItem;
+
+    void CheckExerciseSpawn () {
+        if (ResourceController.Instance.healthResource.value > jobHuntSpawnMentalThreshold || exerciseActionItem.gameObject.activeInHierarchy) {
+            return;
+        }
+        exerciseActionItem.gameObject.SetActive(true);
+    }
+
+    [SerializeField] private int readMentalThreshold;
+    [SerializeField] private ActionItem readActionItem;
+
+    void CheckReadSpawn() {
+        if (ResourceController.Instance.mentalResource.value > readMentalThreshold || readActionItem.gameObject.activeInHierarchy) {
+            return;
+        }
+        readActionItem.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -86,24 +104,7 @@ public class NarrativeController : MonoBehaviour
         }
 
         CheckJobHuntSpawn();
-    }
-
-    void SpawnNewAction (ActionObject actionObject) {
-        GameObject jobHuntAction = Instantiate(actionPrefab, GetSpawnLocation(), Quaternion.identity);
-        jobHuntAction.transform.SetParent(workAction.transform.parent);
-        jobHuntAction.transform.name = actionObject.name +  "Action";
-        jobHuntAction.GetComponent<ActionItem>().SetupActionObject(actionObject);
-    }
-
-    [SerializeField] private GameObject spawnLocationGameObject;
-
-    Vector3 GetSpawnLocation () {
-        int rng = (int)Mathf.Floor(Random.Range(0, 1) * 2);
-        BoxCollider2D spawnArea = spawnLocationGameObject.transform.GetChild(rng).GetComponent<BoxCollider2D>();
-        return new Vector3(
-            Random.Range(spawnArea.transform.position.x - (spawnArea.size.x / 2), spawnArea.transform.position.x + (spawnArea.size.x / 2)),
-            Random.Range(spawnArea.transform.position.y - (spawnArea.size.y / 2), spawnArea.transform.position.y + (spawnArea.size.y / 2)),
-            0
-        );
+        CheckExerciseSpawn();
+        CheckReadSpawn();
     }
 }

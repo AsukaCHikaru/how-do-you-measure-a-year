@@ -19,13 +19,14 @@ public class ActionItem : MonoBehaviour
         ResourceController.Instance.saveResource.Manipulate(actionObject.saveResourceDifferenceList[performTime]);
         ResourceController.Instance.healthResource.Manipulate(actionObject.healthResourceDifferenceList[performTime]);
         ResourceController.Instance.mentalResource.Manipulate(actionObject.mentalResourceDifferenceList[performTime]);
+        ResourceController.Instance.knowledgeResource.Manipulate(actionObject.knowledgeResourceDifferenceList[performTime]);
 
         if (actionObject.name == "Job Hunt") {
             Debug.Log("job hunt");
+
         }
 
         if (actionObject.name == "Quit") {
-            Debug.Log("quit");
             foreach(HourItem hour in HourController.Instance.hourItemList) {
                 string actionName = hour.actionItem.actionObject.name;
                 if (actionName == "Work" || actionName == "Quit") {

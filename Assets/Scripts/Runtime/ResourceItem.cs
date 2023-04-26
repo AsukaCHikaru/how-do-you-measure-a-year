@@ -92,7 +92,7 @@ public class ResourceItem : MonoBehaviour {
         return new Vector3(
             Random.Range(spawnArea.transform.position.x - (spawnArea.size.x / 2), spawnArea.transform.position.x + (spawnArea.size.x / 2)),
             Random.Range(spawnArea.transform.position.y - (spawnArea.size.y / 2), spawnArea.transform.position.y + (spawnArea.size.y / 2)),
-            0
+            5
         );
     }
 }
