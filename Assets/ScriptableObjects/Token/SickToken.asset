@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Sick
   description: You are sick.
   icon: {fileID: 0}
-  backgroundColor: {r: 0.8396226, g: 0.052806363, b: 0.1442115, a: 1}
+  backgroundColor: {r: 0.254717, g: 0.011213932, b: 0.0402889, a: 1}

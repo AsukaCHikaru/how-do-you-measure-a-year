@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DebtToken
   m_EditorClassIdentifier: 
   name: Debt
-  description: Earn money to erase them.
+  description: Rent, food, taxes, anything. Earn money to erase them.
   icon: {fileID: 0}
-  backgroundColor: {r: 0.9056604, g: 0.6584676, b: 0, a: 1}
+  backgroundColor: {r: 0.3584906, g: 0.28389582, b: 0.08342232, a: 1}

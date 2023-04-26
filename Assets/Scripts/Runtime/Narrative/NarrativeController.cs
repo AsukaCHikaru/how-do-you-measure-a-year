@@ -64,6 +64,7 @@ public class NarrativeController : MonoBehaviour
 
     [SerializeField] private int jobHuntSpawnMentalThreshold;
     [SerializeField] private ActionObject jobHuntActionObject;
+    [SerializeField] private ActionObject quitObject;
     private bool isJobHuntSpawned = false;
 
     void CheckJobHuntSpawn () {
@@ -71,6 +72,7 @@ public class NarrativeController : MonoBehaviour
             return;
         }
         SpawnNewAction(jobHuntActionObject);
+        SpawnNewAction(quitObject);
         isJobHuntSpawned = true;
     }
 

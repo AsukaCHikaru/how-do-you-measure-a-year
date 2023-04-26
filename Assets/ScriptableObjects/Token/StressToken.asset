@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Stress
   description: You are stressed.
   icon: {fileID: 0}
-  backgroundColor: {r: 0.040850785, g: 0.3063172, b: 0.764151, a: 1}
+  backgroundColor: {r: 0.015426578, g: 0.09991434, b: 0.24528301, a: 1}
