@@ -8,6 +8,8 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     [SerializeField] private TextMeshProUGUI hourActionText;
     [SerializeField] internal ActionItem actionItem;
 
+    private Color textColor;
+
     void Start () {
         
     }
@@ -15,6 +17,8 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     public void SetActionItem (ActionItem item) {
         actionItem = item;
         hourActionText.text = item.actionObject.name;
+        textColor = item.actionObject.backgroundColor;
+        hourActionText.color = textColor;
     }
 
     public void OnDrop(PointerEventData eventData) {
@@ -24,10 +28,10 @@ public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        hourActionText.color = Color.red;
+        hourActionText.color = Color.white;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        hourActionText.color = Color.white;
+        hourActionText.color = textColor;
     }
 }

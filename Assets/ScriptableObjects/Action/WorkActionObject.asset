@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Work to make money.
   timeMinute: 60
   icon: {fileID: 0}
-  backgroundColor: {r: 0.4056604, g: 0.017859224, b: 0.253231, a: 1}
+  backgroundColor: {r: 0.7924528, g: 0, b: 0.48517534, a: 1}
   saveResourceDifferenceList:
   - 0.6
   - 0.6
