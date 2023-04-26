@@ -82,7 +82,7 @@ public class EndingController : MonoBehaviour
         int exerciseTime = GameObject.Find("ExerciseAction").GetComponent<ActionItem>().allTimePerformTime;
 
         GoodEndScreen.transform.Find("text").GetComponent<TextMeshProUGUI>().text =
-            $"You changed job {1} times;\n" +
+            "In last year, you\n" +
             $"read {readTime} hours;\n" +
             $"exercised {exerciseTime} hours.\n";
         

@@ -25,18 +25,22 @@ public class ActionItem : MonoBehaviour
 
         if (actionObject.name == "Job Hunt") {
             Debug.Log("job hunt");
-
+            WorkActionController.Instance.RollJobHunt();
         }
 
         if (actionObject.name == "Quit") {
+            int workId = -1;
             foreach(HourItem hour in HourController.Instance.hourItemList) {
                 string actionName = hour.actionItem.actionObject.name;
                 if (actionName == "Work" || actionName == "Quit") {
+                    if (actionName == "Work") {
+                        workId = hour.actionItem.actionObject.id;
+                    }
                     hour.SetActionItem(GameObject.Find("IdleAction").GetComponent<ActionItem>());
                 }
             }
-            GameObject oldWork = GameObject.Find("WorkAction");
-            Destroy(oldWork);
+           
+            WorkActionController.Instance.QuitWork(workId);
         }
     }
 

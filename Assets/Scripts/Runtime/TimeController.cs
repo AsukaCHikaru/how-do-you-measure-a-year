@@ -40,7 +40,7 @@ public class TimeController : MonoBehaviour
             hourController.ResetActionTimeMap();
             resourceController.HandleResourceConsumption();
 
-            if (day >= 40 && goodEndScreen.activeInHierarchy == false) {
+            if (day >= 365 && goodEndScreen.activeInHierarchy == false) {
                 EndingController.Instance.StartGoodEnding();
             }
         }

@@ -10,89 +10,89 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5660e8f0011813f46b1840f7e8afc4cd, type: 3}
-  m_Name: SleepActionObject
+  m_Name: WorkActionObject_5
   m_EditorClassIdentifier: 
-  name: Sleep
-  description: Sleep.
+  name: Work
+  description: Your dream job.
   timeMinute: 60
   icon: {fileID: 0}
-  backgroundColor: {r: 0.2782425, g: 0.7830189, b: 0.37078488, a: 1}
-  id: 9
+  backgroundColor: {r: 0.7921569, g: 0.6976647, b: 0, a: 1}
+  id: 15
   saveResourceDifferenceList:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
+  - 0.7
   healthResourceDifferenceList:
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.1
-  - 0.1
-  - 0.1
+  - 0
+  - 0
   - 0
   - 0
   - -0.1
   - -0.1
   - -0.1
+  - -0.1
+  - -0.1
+  - -0.1
+  - -0.1
+  - -0.1
+  - -0.1
   - -0.2
   - -0.2
   - -0.2
-  - -0.3
-  - -0.3
-  - -0.3
-  - -0.3
-  - -0.3
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
   mentalResourceDifferenceList:
   - 0.2
   - 0.2
   - 0.2
   - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
-  - 0.2
+  - 0.1
   - 0.1
   - 0.1
   - 0.1
   - 0
   - 0
+  - 0
+  - 0
+  - -0.1
   - -0.1
   - -0.1
   - -0.1
   - -0.2
   - -0.2
   - -0.2
-  - -0.3
-  - -0.3
-  - -0.3
-  - -0.3
-  - -0.3
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
+  - -0.2
   knowledgeResourceDifferenceList:
   - 0
   - 0
