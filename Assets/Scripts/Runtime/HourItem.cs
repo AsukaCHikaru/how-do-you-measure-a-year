@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.UI;
 
 public class HourItem : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler {
     [SerializeField] private TextMeshProUGUI hourActionText;
     [SerializeField] internal ActionItem actionItem;
+    [SerializeField] internal Image hourIndicator;
 
     private Color textColor;
 

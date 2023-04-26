@@ -25,6 +25,13 @@ public class HourController : MonoBehaviour {
         hourItem.actionItem.Perform(actionPerformTime);
     }
 
+    internal void ShowHourIndicator (int hour) {
+        for(int h = 0; h < 24; h++) {
+            if (h == hour) hourItemList[h].hourIndicator.gameObject.SetActive(true);
+            else hourItemList[h].hourIndicator.gameObject.SetActive(false);
+        }
+    }
+
     internal void ResetActionTimeMap() {
         actionTimeMap.Clear();
     }

@@ -33,6 +33,7 @@ public class TimeController : MonoBehaviour
             // Debug.Log(hour);
             lastHour = hour;
             hourController.PerformHourAction(hour);
+            hourController.ShowHourIndicator(hour);
         }
         if (dateTimer >= dayToSecondRatio) {
             dateTimer -= dayToSecondRatio;

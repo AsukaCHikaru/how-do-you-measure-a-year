@@ -3329,6 +3329,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2609095935369752803, guid: 206f2e241dc01ae4388bc1bb6b3af3ce, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2609095935369752805, guid: 206f2e241dc01ae4388bc1bb6b3af3ce, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6528,7 +6532,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
+  m_Color: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
