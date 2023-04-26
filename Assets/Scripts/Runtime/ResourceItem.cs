@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using TMPro;
 
 [System.Serializable]
@@ -17,6 +16,8 @@ public class ResourceItem : MonoBehaviour {
     [SerializeField] internal float maxValue;
     [SerializeField] private TextMeshProUGUI valueText;
     [SerializeField] internal List<ResourceTokenPair> resourceToTokenMap;
+
+    [SerializeField] private GameObject tokenPrefab;
 
     private Transform tokenParent;
 
@@ -44,7 +45,6 @@ public class ResourceItem : MonoBehaviour {
 
     void CheckTokenGeneration () {
         Dictionary<string, int> tokenNumberMap = new Dictionary<string, int>();
-        GameObject tokenPrefab = PrefabUtility.LoadPrefabContents("Assets/Prefabs/Tokens/TokenPrefab.prefab");
 
         foreach (TokenItem tokenItem in tokenParent.GetComponentsInChildren<TokenItem>()) {
             int thisTokenCount = 0;
@@ -78,8 +78,6 @@ public class ResourceItem : MonoBehaviour {
                 }
             }
         }
-
-        PrefabUtility.UnloadPrefabContents(tokenPrefab);
     }
 
     void UpdateUI() {

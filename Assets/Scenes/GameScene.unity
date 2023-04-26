@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2571659939106266515, guid: 078a3b424f9eb4a4cbf0d2efe60d0b79, type: 3}
       propertyPath: m_Name
-      value: SocialMediaAction
+      value: Social MediaAction
       objectReference: {fileID: 0}
     - target: {fileID: 8708435586356392101, guid: 078a3b424f9eb4a4cbf0d2efe60d0b79, type: 3}
       propertyPath: actionObject
@@ -2372,6 +2372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1300619531}
     m_Modifications:
+    - target: {fileID: 7719864420791429912, guid: 7d057e1e03bc2b84390cedaf3695edb6, type: 3}
+      propertyPath: tokenPrefab
+      value: 
+      objectReference: {fileID: 2571659939106266515, guid: 624ef33fd9cb0e24f897321a1a8272f6, type: 3}
     - target: {fileID: 7719864420791429912, guid: 7d057e1e03bc2b84390cedaf3695edb6, type: 3}
       propertyPath: resourceToTokenMap.Array.size
       value: 1
@@ -6444,6 +6448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1300619531}
     m_Modifications:
+    - target: {fileID: 7719864420791429912, guid: 8a870794f54f6d645a6e99c9836ada16, type: 3}
+      propertyPath: tokenPrefab
+      value: 
+      objectReference: {fileID: 2571659939106266515, guid: 624ef33fd9cb0e24f897321a1a8272f6, type: 3}
     - target: {fileID: 7719864420791429913, guid: 8a870794f54f6d645a6e99c9836ada16, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6517,6 +6525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1300619531}
     m_Modifications:
+    - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
+      propertyPath: tokenPrefab
+      value: 
+      objectReference: {fileID: 2571659939106266515, guid: 624ef33fd9cb0e24f897321a1a8272f6, type: 3}
     - target: {fileID: 7719864420791429912, guid: ae863aaa34e6d0c4ea972002e355a11f, type: 3}
       propertyPath: resourceToTokenMap.Array.size
       value: 2

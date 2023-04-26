@@ -12,14 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5660e8f0011813f46b1840f7e8afc4cd, type: 3}
   m_Name: WorkActionObject
   m_EditorClassIdentifier: 
-  name: WORK
+  name: Work
   description: Work to make money.
   timeMinute: 60
   icon: {fileID: 0}
   backgroundColor: {r: 0.4056604, g: 0.017859224, b: 0.253231, a: 1}
-  saveResourceDifference: 1
-  healthResourceDifference: -0.3
-  mentalResourceDifference: -0.2
   saveResourceDifferenceList:
   - 0.6
   - 0.6
