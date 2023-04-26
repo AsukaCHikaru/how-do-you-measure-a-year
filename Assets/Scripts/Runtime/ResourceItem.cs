@@ -60,7 +60,7 @@ public class ResourceItem : MonoBehaviour {
             
             if (expectedTokenCount > currentTokenCount) {
                 for(int count = 0; count < expectedTokenCount - currentTokenCount; count++) {
-                    GameObject newToken = Instantiate(tokenPrefab, Vector3.zero, Quaternion.identity);
+                    GameObject newToken = Instantiate(tokenPrefab, GetSpawnLocation(), Quaternion.identity);
                     newToken.transform.SetParent(tokenParent);
                     newToken.transform.name = pair.tokenObject.name;
                     newToken.GetComponent<TokenItem>().SetToken(pair.tokenObject);
@@ -82,5 +82,17 @@ public class ResourceItem : MonoBehaviour {
 
     void UpdateUI() {
         valueText.text = Mathf.Floor(value).ToString();
+    }
+
+    [SerializeField] private GameObject spawnLocationGameObject;
+
+    Vector3 GetSpawnLocation() {
+        int rng = Random.Range(0, 2);
+        BoxCollider2D spawnArea = spawnLocationGameObject.transform.GetChild(rng).GetComponent<BoxCollider2D>();
+        return new Vector3(
+            Random.Range(spawnArea.transform.position.x - (spawnArea.size.x / 2), spawnArea.transform.position.x + (spawnArea.size.x / 2)),
+            Random.Range(spawnArea.transform.position.y - (spawnArea.size.y / 2), spawnArea.transform.position.y + (spawnArea.size.y / 2)),
+            0
+        );
     }
 }

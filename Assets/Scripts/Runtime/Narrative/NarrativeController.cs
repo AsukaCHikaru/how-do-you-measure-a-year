@@ -11,6 +11,7 @@ public class NarrativeController : MonoBehaviour
     [SerializeField] private ActionItem dinnerAction;
     [SerializeField] private ActionItem socialmediaAction;
     [SerializeField] private GameObject tokenPrefab;
+    [SerializeField] private GameObject actionPrefab;
 
     private bool isDefaultSet = false;
 
@@ -61,6 +62,18 @@ public class NarrativeController : MonoBehaviour
         InstanteToken(ResourceController.Instance.mentalResource);
     }
 
+    [SerializeField] private int jobHuntSpawnMentalThreshold;
+    [SerializeField] private ActionObject jobHuntActionObject;
+    private bool isJobHuntSpawned = false;
+
+    void CheckJobHuntSpawn () {
+        if (ResourceController.Instance.mentalResource.value > jobHuntSpawnMentalThreshold || isJobHuntSpawned) {
+            return;
+        }
+        SpawnNewAction(jobHuntActionObject);
+        isJobHuntSpawned = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -69,5 +82,26 @@ public class NarrativeController : MonoBehaviour
             SetupDefaultTokens();
             isDefaultSet = true;
         }
+
+        CheckJobHuntSpawn();
+    }
+
+    void SpawnNewAction (ActionObject actionObject) {
+        GameObject jobHuntAction = Instantiate(actionPrefab, GetSpawnLocation(), Quaternion.identity);
+        jobHuntAction.transform.SetParent(workAction.transform.parent);
+        jobHuntAction.transform.name = actionObject.name +  "Action";
+        jobHuntAction.GetComponent<ActionItem>().SetupActionObject(actionObject);
+    }
+
+    [SerializeField] private GameObject spawnLocationGameObject;
+
+    Vector3 GetSpawnLocation () {
+        int rng = (int)Mathf.Floor(Random.Range(0, 1) * 2);
+        BoxCollider2D spawnArea = spawnLocationGameObject.transform.GetChild(rng).GetComponent<BoxCollider2D>();
+        return new Vector3(
+            Random.Range(spawnArea.transform.position.x - (spawnArea.size.x / 2), spawnArea.transform.position.x + (spawnArea.size.x / 2)),
+            Random.Range(spawnArea.transform.position.y - (spawnArea.size.y / 2), spawnArea.transform.position.y + (spawnArea.size.y / 2)),
+            0
+        );
     }
 }

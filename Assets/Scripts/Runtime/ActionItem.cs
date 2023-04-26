@@ -12,14 +12,23 @@ public class ActionItem : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
 
     void Start () {
-        titleText.text = actionObject.name;
-        descriptionText.text = actionObject.description;
-        sprite.color = actionObject.backgroundColor;
+        SetupUI();
     }
 
     internal void Perform (int performTime) {
         ResourceController.Instance.saveResource.Manipulate(actionObject.saveResourceDifferenceList[performTime]);
         ResourceController.Instance.healthResource.Manipulate(actionObject.healthResourceDifferenceList[performTime]);
         ResourceController.Instance.mentalResource.Manipulate(actionObject.mentalResourceDifferenceList[performTime]);
+    }
+
+    internal void SetupActionObject (ActionObject newObject) {
+        actionObject = newObject;
+        SetupUI();
+    }
+
+    void SetupUI () {
+        titleText.text = actionObject.name;
+        descriptionText.text = actionObject.description;
+        sprite.color = actionObject.backgroundColor;
     }
 }

@@ -16,7 +16,7 @@ MonoBehaviour:
   description: I hate my job...
   timeMinute: 60
   icon: {fileID: 0}
-  backgroundColor: {r: 0.8396226, g: 0.26594016, b: 0, a: 0}
+  backgroundColor: {r: 0.8396226, g: 0.26594016, b: 0, a: 1}
   saveResourceDifferenceList:
   - -0.2
   - -0.2
